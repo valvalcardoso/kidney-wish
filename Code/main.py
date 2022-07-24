@@ -12,6 +12,7 @@ fase1 = "none"
 fase2 = "none"
 fase3 = "none"
 cont = 0
+
 while True:
 	cont += 1
 	
