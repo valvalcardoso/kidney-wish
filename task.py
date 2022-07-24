@@ -18,8 +18,8 @@ def Play(i1, i2, i3, sound1, sound2,sound3, Kidney,group, screen):
 	
 	while True:
 		
-		hitsoundeffect = choice(sound2)
-		failsoundeffect = choice(sound3)
+		hitsoundeffect = sound2
+		failsoundeffect = sound3
 		
 		clock.tick(60)
 		cont += 1		
@@ -98,7 +98,7 @@ def Init(task_array):
 				
 			elif ev.type == pg.MOUSEBUTTONDOWN:
 				if task_array['button'][0].collidepoint(ev.pos):
-				 d = Play(Items1,Items2,Items3, soundtrack, [hitsound,eatsound],[failsound], Kidney, group,screen)
+				 d = Play(Items1,Items2,Items3, soundtrack, eatsound,failsound, Kidney, group,screen)
 					
 		screen.blit(bg,(0,0))
 		screen.blit(task_array['items'], (100,0))
