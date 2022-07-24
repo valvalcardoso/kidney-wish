@@ -16,7 +16,7 @@ screen = pg.display.set_mode((width, height))
 soundtrack = pg.mixer.Sound("../Sounds/soundtrack.mp3")
 win_sound = pg.mixer.Sound("../Sounds/aplausos.mp3")
 game_over_sound = pg.mixer.Sound("../Sounds/game_over.mp3")
-hitsound = pg.mixer.Sound("../Sounds/eita bb.mp3")
+
 failsound = pg.mixer.Sound("../Sounds/fail.mp3")
 eatsound = pg.mixer.Sound("../Sounds/eating.mp3")
 	
